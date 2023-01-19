@@ -1,8 +1,12 @@
 body {
     font-family: 'Montserrat', serif;
+
+    background-color: rgb(85, 84, 84);
 }
 
-
+.menoNav{
+    top: -80px;
+}
 
 /* Hamburgher Menu */
 .ham {
