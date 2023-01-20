@@ -4,9 +4,7 @@ body {
     background-color: rgb(85, 84, 84);
 }
 
-.menoNav{
-    top: -80px;
-}
+
 
 /* Hamburgher Menu */
 .ham {
@@ -17,20 +15,24 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  .hamRotate.active {
+}
+
+.hamRotate.active {
     transform: rotate(45deg);
-  }
-  .hamRotate180.active {
+}
+
+.hamRotate180.active {
     transform: rotate(180deg);
-  }
-  .line {
-    fill:none;
+}
+
+.line {
+    fill: none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:rgb(255, 255, 255);
-    stroke-width:5.5;
-    stroke-linecap:round;
-  }
+    stroke: rgb(255, 255, 255);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
 .ham8 .top {
     stroke-dasharray: 40 160;
 }
@@ -58,4 +60,51 @@ body {
 
 .ham8.active .bottom {
     stroke-dashoffset: -64px;
+}
+
+/* Box Contenuti */
+.textPrimoBox {
+    position: absolute;
+    top: 0;
+    width: 206px;
+    padding: 17px;
+}
+
+.scopriDipiu {
+    padding-left: 17px;
+    bottom: 10px;
+}
+
+.boxCalascioAntica {
+    object-fit: contain;
+    position: relative;
+    width: 90%;
+    max-width: 718px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.sfondoCarta {
+    object-fit: cover;
+    height: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .sfondoCarta {
+        height: 900px;
+    }
+}
+
+.sezioneScaricaApp {
+    background-color: #014B46;
+    position: relative;
+    top: -4px;
+}
+
+
+
+.ondeHome{
+    position: relative;
+  top: -200px;
 }

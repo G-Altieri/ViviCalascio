@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
         integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/index.js"></script>
 </head>
 
 
@@ -29,13 +29,16 @@
 
 
     <!-- Navbar -->
-    <div class="h-20 top-0 sticky z-50 bg-opacity-10 bg-white flex items-center w-fill backdrop-blur-xl">
+    <div class="h-20 top-0 fixed z-50 bg-opacity-10 bg-gray-400 flex items-center w-screen backdrop-blur-xl">
         <!--  Icon Castello -->
-        <img src="/assets/icon/icon_castello.svg" alt="" width="40px" class="fill-black flex-none pl-2 pb-2">
+        <a href="/" class=" flex-none">
+            <img src="/assets/icon/icon_castello.svg" alt="" width="40px" class="fill-black pl-2 pb-2">
+        </a>
 
-       <!-- Scritta Vivi Calascio -->
-        <div class="text-xl lg:text-2xl text-white font-semibold flex-auto pt-2 pl-2">Vivi Calascio</div>
- 
+        <!-- Scritta Vivi Calascio -->
+        <a href="/" class="flex-auto">
+            <div class="text-xl lg:text-2xl text-white font-semibold pt-2 pl-2">Vivi Calascio</div>
+        </a>
         <!-- hamburgher Menu -->
         <svg class="ham hamRotate ham8 flex-none right-0 scale-75" viewBox="0 0 100 100" width="80" id="hamMenu">
             <path class="line top"
@@ -46,14 +49,60 @@
         </svg>
     </div>
     <!-- Imagine TopHome Castello Calascio -->
-    <img src="" id="img" alt="" width="100%" class="relative menoNav">
+    <img src="" id="img" alt="" width="100%" class="relative ">
 
     <!-- Imagine Carta Strappata -->
-    <img src="/assets/img/home/carta.jpg" id="img" alt="" width="100%" class="relative menoNav" >
+
+    <div class="relative">
+        <img src="" id="sfondoCarta" alt="" width="100%" class="relative sfondoCarta  z-0">
 
 
+        <!-- Box con i contenuti informativi  -->
+        <div class="top-0 absolute boxCalascioAntica grid gap-12">
+
+            <!-- Prima -->
+            <div class="relative top-0 boxCalascioAntica mt-16">
+                <img src="/assets/img/home/BoxCalscioAnticaText.png" alt="Calascio Antica "
+                    class="hover:scale-105 transition-all duration-75 cursor-pointer">
+
+            </div>
+            <!-- Seconda -->
+            <div class="relative  boxCalascioAntica ">
+                <img src="/assets/img/home/BoxCalascioNuovaText.png" alt="Calascio Nuova"
+                    class="hover:scale-105 transition-all duration-75 cursor-pointer">
+
+            </div>
+            <!-- Terza -->
+            <div class="relative boxCalascioAntica " style="top:0rem;">
+                <img src="/assets/img/home/BoxCastelloText.png" alt="Calascio Nuova"
+                    class=" hover:scale-105 transition-all duration-75 cursor-pointer">
+
+            </div>
+        </div>
+
+        <!-- Sfondo con Carta e Castello Centro Page -->
+        <div>
+            <img src="" id="sfondoCastelloDiMezzo" alt="Castello di Rocca Calascio di Sfondo" width="100%"
+                style="top: -4px;" class="z-10 relative">
+        </div>
+
+        <!-- Sezione Scarica L app -->
+        <div class="sezioneScaricaApp grid justify-items-center">
+    
+            <img src="/assets/img/home/smartphoneApp.png "
+                alt="Mockup di Uno smartphone Con al interno app di vivicalascio" class="w-11/12">
+
+       
+        </div>
+    </div>
+
+    <!-- Onde Home -->
+    <img src="/assets/img/home/onde.png" alt="Onse di Sfondo" width="100%" class="ondeHome top"></div>
+    <div></div>
     <!-- Menu Dopo L apertura -->
-    <div id="menuOpen" class="hidden absolute bg-white bg-opacity-10 backdrop-blur-xl w-screen grid grid-cols-1 content-center" style="top:80px; height: 300px;">
+    <div id="menuOpen"
+        class="hidden fixed bg-white bg-opacity-10 backdrop-blur-xl w-screen grid grid-cols-1 content-center"
+        style="top:80px; height: 300px;">
         <ul class="text-center text-white text-xl grid gap-4">
             <li>Giovanni</li>
             <li>Giammarco</li>
