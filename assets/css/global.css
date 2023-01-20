@@ -5,6 +5,29 @@ body {
 }
 
 
+/*Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #00598d3d;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(87, 166, 255);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #003c8a;
+}
+
 
 /* Hamburgher Menu */
 .ham {
@@ -137,9 +160,28 @@ body {
     height: 200px;
 
 }
-.footer{
+
+.footer {
     background-color: #3831A8;
     position: relative;
     width: 100%;
     top: -4px;
+}
+
+
+/*Altezza Carosello*/
+.altezzaCarosello {
+    height: 240px;
+}
+
+@media screen and (min-width: 700px) {
+    .altezzaCarosello {
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .altezzaCarosello {
+        height: 600px;
+    }
 }
