@@ -53,12 +53,11 @@
 
     <!-- Imagine Carta Strappata -->
 
-    <div class="relative">
-        <img src="" id="sfondoCarta" alt="" width="100%" class="relative sfondoCarta  z-0">
+    <div class="relative sfondoCarta" id="sfondoCarta" >
 
 
         <!-- Box con i contenuti informativi  -->
-        <div class="top-0 absolute boxCalascioAntica grid gap-12">
+        <div class="top-0 relative boxCalascioAntica grid gap-12">
 
             <!-- Prima -->
             <div class="relative top-0 boxCalascioAntica mt-16">
@@ -79,6 +78,7 @@
 
             </div>
         </div>
+    </div>
 
         <!-- Sfondo con Carta e Castello Centro Page -->
         <div>
@@ -94,11 +94,22 @@
 
        
         </div>
-    </div>
+  
 
     <!-- Onde Home -->
-    <img src="/assets/img/home/onde.png" alt="Onse di Sfondo" width="100%" class="ondeHome top"></div>
-    <div></div>
+    <div class="relative ondeHome">
+        <!-- Img Mappa e Scritte -->
+        <img src="/assets/img/home/onde.png" alt="Onse di Sfondo" width="100%" class="">
+        <div class="containerButton">
+            <!-- Button -->
+            <button class="buttonPrenotazione font-light text-sm md:text-xl">Prenota Subito la tua Guida</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <img src="/assets/img/home/footer.png" width="100%" alt="Footer con Img del Castello">
+    </div>
+
     <!-- Menu Dopo L apertura -->
     <div id="menuOpen"
         class="hidden fixed bg-white bg-opacity-10 backdrop-blur-xl w-screen grid grid-cols-1 content-center"

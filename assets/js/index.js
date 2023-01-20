@@ -3,12 +3,12 @@ $(document).ready(function () {
     /*Imagini Resposive Di Home*/
     if ($(window).width() > 515) {
         $("#img").attr("src", "/assets/img/home/castelloTopHome_large.jpg");
-        $("#sfondoCarta").attr("src", "/assets/img/home/carta_large.jpg");
+        $('#sfondoCarta').css("background-image", "url(/assets/img/home/carta_large.jpg)");  
         $("#sfondoCastelloDiMezzo").attr("src", "/assets/img/home/SfondoHomeMezzo_large.jpg");
         
     } else {
         $("#img").attr("src", "/assets/img/home/castelloTopHome_small.jpg");
-        $("#sfondoCarta").attr("src", "/assets/img/home/carta_small.jpg");
+        $('#sfondoCarta').css("background-image", "url(/assets/img/home/carta_small.jpg)");  
         $("#sfondoCastelloDiMezzo").attr("src", "/assets/img/home/SfondoHomeMezzo_small.jpg");
     }
 
