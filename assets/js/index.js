@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+   
     /*Imagini Resposive Di Home*/
     if ($(window).width() > 515) {
         $("#img").attr("src", "/assets/img/home/castelloTopHome_large.jpg");

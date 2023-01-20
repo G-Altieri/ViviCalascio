@@ -29,7 +29,7 @@
 
 
     <!-- Navbar -->
-    <div class="h-20 top-0 fixed z-50 bg-opacity-10 bg-gray-700 flex items-center w-screen backdrop-blur-xl">
+    <div class="h-20 top-0 fixed z-50 bg-opacity-10 bg-black flex items-center w-screen backdrop-blur-xl">
         <!--  Icon Castello -->
         <a href="/" class=" flex-none">
             <img src="/assets/icon/icon_castello.svg" alt="" width="40px" class="fill-black pl-2 pb-2">
@@ -53,26 +53,26 @@
 
     <!-- Imagine Carta Strappata -->
 
-    <div class="relative sfondoCarta" id="sfondoCarta" >
+    <div class="relative sfondoCarta" id="sfondoCarta">
 
 
         <!-- Box con i contenuti informativi  -->
         <div class="top-0 relative boxCalascioAntica grid gap-12">
 
             <!-- Prima -->
-            <a class="relative top-0 boxCalascioAntica mt-16" href="/pages/calascioAntica.html">
+            <a class="relative top-0 boxCalascioAntica mt-16" href="/pages/infoCalascio/">
                 <img src="/assets/img/home/BoxCalscioAnticaText.png" alt="Calascio Antica "
                     class="hover:scale-105 transition-all duration-75 cursor-pointer">
 
             </a>
             <!-- Seconda -->
-            <a class="relative  boxCalascioAntica " href="/pages/calascioAntica.html">
+            <a class="relative  boxCalascioAntica " href="/pages/infoCalascio/">
                 <img src="/assets/img/home/BoxCalascioNuovaText.png" alt="Calascio Nuova"
                     class="hover:scale-105 transition-all duration-75 cursor-pointer">
 
             </a>
             <!-- Terza -->
-            <a class="relative boxCalascioAntica " style="top:0rem;" href="/pages/calascioAntica.html">
+            <a class="relative boxCalascioAntica " style="top:0rem;" href="/pages/infoCalascio/">
                 <img src="/assets/img/home/BoxCastelloText.png" alt="Calascio Nuova"
                     class=" hover:scale-105 transition-all duration-75 cursor-pointer">
 
@@ -80,21 +80,21 @@
         </div>
     </div>
 
-        <!-- Castello Centro Page -->
-        <div>
-            <img src="" id="sfondoCastelloDiMezzo" alt="Castello di Rocca Calascio di Sfondo" width="100%"
-                style="top: -4px;" class="z-10 relative">
-        </div>
+    <!-- Castello Centro Page -->
+    <div>
+        <img src="" id="sfondoCastelloDiMezzo" alt="Castello di Rocca Calascio di Sfondo" width="100%"
+            style="top: -4px;" class="z-10 relative">
+    </div>
 
-        <!-- Sezione Scarica L app -->
-        <div class="sezioneScaricaApp grid justify-items-center">
-    
-            <img src="/assets/img/home/smartphoneApp.png "
-                alt="Mockup di Uno smartphone Con al interno app di vivicalascio" class="w-11/12">
+    <!-- Sezione Scarica L app -->
+    <div class="sezioneScaricaApp grid justify-items-center">
 
-       
-        </div>
-  
+        <img src="/assets/img/home/smartphoneApp.png " alt="Mockup di Uno smartphone Con al interno app di vivicalascio"
+            class="w-11/12">
+
+
+    </div>
+
 
     <!-- Onde Home -->
     <div class="relative ondeHome">
@@ -102,7 +102,8 @@
         <img src="/assets/img/home/onde.png" alt="Onse di Sfondo" width="100%" class="">
         <div class="containerButton">
             <!-- Button -->
-            <button class="buttonPrenotazione font-light text-sm md:text-xl">Prenota Subito la tua Guida</button>
+            <button class="buttonPrenotazione font-light text-sm md:text-xl cursor-pointer"
+                onclick="location.href='/pages/prenotazione/index.html'">Prenota Subito la tua Guida</button>
         </div>
     </div>
     <!-- Footer -->
@@ -112,12 +113,12 @@
 
     <!-- Menu Dopo L apertura -->
     <div id="menuOpen"
-        class="hidden fixed bg-white bg-opacity-10 backdrop-blur-xl w-screen grid grid-cols-1 content-center"
+        class="hidden fixed bg-black bg-opacity-10 backdrop-blur-xl w-screen grid grid-cols-1 content-center z-50"
         style="top:80px; height: 300px;">
         <ul class="text-center text-white text-xl grid gap-4">
-            <li>Giovanni</li>
-            <li>Giammarco</li>
-            <li>Guglielmo</li>
+            <!-- <li><a href="/">Home</a></li> -->
+            <li><a href="/pages/infoCalascio/">Calascio Antica</a></li>
+            <li><a href="/pages/prenotazione/">Prenotazione</a></li>
         </ul>
     </div>
 </body>
