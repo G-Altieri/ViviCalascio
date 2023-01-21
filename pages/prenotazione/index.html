@@ -26,8 +26,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/datepicker.min.js"></script>
     <!-- Calendario -->
-    <script src="/assets/js/jquery.simple-calendar.js"></script>
-    <link rel="stylesheet" href="/assets/css/simple-calendar.css">
+    <script src="/assets/js/vanilla-calendar.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/vanilla-calendar.min.css">
 </head>
 
 <body class="overflow-x-hidden">
@@ -163,7 +163,7 @@
                             </dl>
                         </div>
                     </div>
-                    <div id="container" class="calendar-container mt-16"></div>
+                    <div id="calendar" class="mt-16 mx-auto"></div>
                 </div>
 
                 <!-- Fine 1 Box -->
@@ -223,6 +223,7 @@
                             </dl>
                         </div>
                     </div>
+                    <div id="calendar2" class="mt-16 mx-auto"></div>
                 </div>
             </div>
             <!-- Terzo Percorso -->
@@ -278,6 +279,7 @@
                             </dl>
                         </div>
                     </div>
+                    <div id="calendar3" class="mt-16 mx-auto"></div>
                 </div>
             </div>
 
@@ -400,24 +402,60 @@
         </ul>
     </div>
     <script>
-        var $calendar;
-        $(document).ready(function () {
-            let container = $("#container").simpleCalendar({
-                fixedStartDay: 0, // begin weeks by sunday
-                disableEmptyDetails: true,
-                months: ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'],
-                days: ['Domenica', 'Lunedi', 'Martedi', 'Mercoledi', 'Giovedi', 'Venerdi', 'Sabato'],
-                disableEventDetails: true,
-                events: [
-                {
-  startDate: new Date(new Date().setHours(new Date().getHours() + 48)).toISOString(),
-  endDate: new Date(new Date().setHours(new Date().getHours() + 49)).getTime(),
-  summary: 'New event'
-},
-                ],
-
+        document.addEventListener('DOMContentLoaded', () => {
+            const calendar = new VanillaCalendar('#calendar', {
+                settings: {
+                    lang: 'it',
+                    visibility: {
+                        weekend: false,
+                    },
+                    selection: {
+                        day: false,
+                    },
+                    selected: {
+                        dates: ['2023-02-02', '2023-01-27', '2023-01-23'],
+                        month: 0,
+                        year: 2023,
+                    },
+                },
             });
-            $calendar = container.data('plugin_simpleCalendar')
+            calendar.init();
+            const calendar2 = new VanillaCalendar('#calendar2', {
+                settings: {
+                    lang: 'it',
+                    visibility: {
+                        weekend: false,
+                    },
+                    selection: {
+                        day: false,
+                    },
+                    selected: {
+                        dates: ['2023-02-02', '2023-01-27', '2023-01-23'],
+                        month: 0,
+                        year: 2023,
+                    },
+                },
+            });
+            calendar.init();
+            const calendar3 = new VanillaCalendar('#calendar3', {
+                settings: {
+                    lang: 'it',
+                    visibility: {
+                        weekend: false,
+                    },
+                    selection: {
+                        day: false,
+                    },
+                    selected: {
+                        dates: ['2023-02-02', '2023-01-27', '2023-01-23'],
+                        month: 0,
+                        year: 2023,
+                    },
+                },
+            });
+            calendar.init();
+            calendar2.init();
+            calendar3.init();
         });
     </script>
 </body>
