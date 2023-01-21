@@ -163,7 +163,12 @@
                             </dl>
                         </div>
                     </div>
-                    <div id="calendar" class="mt-16 mx-auto"></div>
+                    <div class="text-center mt-6 text-md">Disponibilità</div>
+                    <div id="calendar" class=" mx-auto"></div>
+                    <div class="inline-flex items-center">
+                        <span class="flex w-3 h-3 bg-red-800 rounded-full mr-1 ml-11"></span> Guida non disponibile
+                    </div>
+                    <div></div>
                 </div>
 
                 <!-- Fine 1 Box -->
@@ -223,7 +228,11 @@
                             </dl>
                         </div>
                     </div>
-                    <div id="calendar2" class="mt-16 mx-auto"></div>
+                    <div class="text-center mt-6 text-md">Disponibilità</div>
+                    <div id="calendar2" class=" mx-auto"></div>
+                    <div class="inline-flex items-center">
+                        <span class="flex w-3 h-3 bg-red-800 rounded-full mr-1 ml-11"></span> Guida non disponibile
+                    </div>
                 </div>
             </div>
             <!-- Terzo Percorso -->
@@ -279,7 +288,11 @@
                             </dl>
                         </div>
                     </div>
-                    <div id="calendar3" class="mt-16 mx-auto"></div>
+                    <div class="text-center mt-6 text-md">Disponibilità</div>
+                    <div id="calendar3" class=" mx-auto"></div>
+                    <div class="inline-flex items-center">
+                        <span class="flex w-3 h-3 bg-red-800 rounded-full mr-1 ml-11"></span> Guida non disponibile
+                    </div>
                 </div>
             </div>
 
@@ -305,16 +318,16 @@
                 <div class="grid gap-6 mb-6 md:grid-cols-2 relative">
                     <!-- Nome e Cognome -->
                     <div>
-                        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Nome e
+                        <label for="nome" class="block mb-2 text-sm font-medium text-gray-900 ">Nome e
                             Cognome</label>
-                        <input type="text" id="first_name"
+                        <input type="text" id="nome"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                             placeholder="Mario Rossi" required>
                     </div>
                     <!-- Email -->
                     <div>
-                        <label for="company" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
-                        <input type="text" id="company"
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
+                        <input type="text" id="email"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                             placeholder="asd@email.com" required>
                     </div>
@@ -323,22 +336,23 @@
                         <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Phone number</label>
                         <input type="tel" id="phone"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="3479867773" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                            placeholder="3479867773" required>
                     </div>
                     <!-- Numero di persone -->
                     <div>
-                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Numero di
+                        <label for="numPersone" class="block mb-2 text-sm font-medium text-gray-900 ">Numero di
                             Persone</label>
-                        <input type="tel" id="phone"
+                        <input type="tel" id="numPersone"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="1" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                            placeholder="1" required>
                     </div>
                     <!-- Selezione Percorso -->
                     <div>
-                        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 ">Percorso</label>
-                        <select id="countries"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
-                            <option selected>Seleziona percorso</option>
+                        <label for="percorso" class="block mb-2 text-sm font-medium text-gray-900 ">Percorso</label>
+                        <select id="percorso"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            required="required">
+                            <option value="">Seleziona percorso</option>
                             <option value="percorso1">Percorso Uno</option>
                             <option value="percorso2">Percorso Due</option>
                             <option value="percorso3">Percorso Tre</option>
@@ -358,7 +372,7 @@
                             </svg>
                         </div>
                         <label for="data" class="block mb-2 text-sm font-medium text-gray-900 ">Seleziona Data</label>
-                        <input datepicker datepicker-autohide type="text" id="dataPicker"
+                        <input datepicker datepicker-autohide type="text" id="dataPicker" required
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  "
                             placeholder="Seleziona Data">
                     </div>
@@ -366,14 +380,14 @@
                 <div class="flex items-start mb-6">
                     <div class="flex items-center h-5">
 
-                        <input id="remember" type="checkbox" value=""
+                        <input type="checkbox" value="" id="checkTerm"
                             class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300  "
                             required>
                     </div>
-                    <label for="remember" class="ml-2 text-sm font-medium text-gray-900 ">I agree with the <a href="#"
+                    <label for="checkTerm" class="ml-2 text-sm font-medium text-gray-900 ">I agree with the <a href="#"
                             class="text-blue-600 hover:underline ">terms and conditions</a>.</label>
                 </div>
-                <button type="submit"
+                <button type="button" id="submitButton"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center   ">Invia</button>
             </form>
 
@@ -456,6 +470,36 @@
             calendar.init();
             calendar2.init();
             calendar3.init();
+
+            //Invio Form
+            $.getJSON("/assets/js/storeData.json", function (data) {
+                console.log(data);
+            }).fail(function () {
+                console.log("An error has occurred.");
+            });
+
+            $("#submitButton").click(function () {
+                if ($("#nome").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#numPersone").val() != "" && $("#percorso").val() != "" && $("#dataPicker").val() && $('#checkTerm').is(":checked")) {
+                    var newData = {
+                        nome: $("#nome").val(),
+                        email: $("#email").val(),
+                        numTel: $("#phone").val(),
+                        numPersone: $("#numPersone").val(),
+                        percorso: $("#percorso").val(),
+                        data: $("#dataPicker").val()
+                    }
+                    console.log(newData);
+                    var newData2 = JSON.stringify(newData);
+                    jQuery.post('/assets/js/storeData.json', {
+                        newData: newData
+                    }, function (response) {
+                        // response could contain the url of the newly saved file
+                    })
+                    window.location.replace('/pages/prenotazione/pagamento.html');
+                }
+
+            });
+
         });
     </script>
 </body>
