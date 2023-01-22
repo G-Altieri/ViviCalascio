@@ -342,7 +342,7 @@
                     <div>
                         <label for="numPersone" class="block mb-2 text-sm font-medium text-gray-900 ">Numero di
                             Persone</label>
-                        <input type="tel" id="numPersone"
+                        <input type="number" id="numPersone"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                             placeholder="1" required>
                     </div>
@@ -480,23 +480,31 @@
 
             $("#submitButton").click(function () {
                 if ($("#nome").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#numPersone").val() != "" && $("#percorso").val() != "" && $("#dataPicker").val() && $('#checkTerm').is(":checked")) {
-                    var newData = {
-                        nome: $("#nome").val(),
-                        email: $("#email").val(),
-                        numTel: $("#phone").val(),
-                        numPersone: $("#numPersone").val(),
-                        percorso: $("#percorso").val(),
-                        data: $("#dataPicker").val()
-                    }
-                    console.log(newData);
-                    var newData2 = JSON.stringify(newData);
-                    jQuery.post('/assets/js/storeData.json', {
-                        newData: newData
-                    }, function (response) {
-                        // response could contain the url of the newly saved file
-                    })
-                    window.location.replace('/pages/prenotazione/pagamento.html');
-                }
+
+                    $.ajax({
+                        type: "POST",
+                        url: "salvaDatiForm.php",
+                        data: {
+                            nome: $("#nome").val(),
+                            email: $("#email").val(),
+                            numTel: $("#phone").val(),
+                            numPersone: $("#numPersone").val(),
+                            percorso: $("#percorso").val(),
+                            data: $("#dataPicker").val()
+                        },
+                        cache: false,
+                        success: function (data) {
+                            console.log(data);
+                            window.location.replace('/pages/prenotazione/pagamento.html');
+                        },
+                        error: function (xhr, status, error) {
+                            console.error(xhr);
+                        }
+                    });
+
+
+
+                } //fine if del controllo della form
 
             });
 

@@ -76,7 +76,7 @@
             <div id="ripilogoDati" class="text-2xl">
                 <!-- Dati in tabella -->
                 <div class="grid grid-cols-2 w-full justify-items-left bg-white border-b shadow-md rounded-lg text-sm sm:text-sm md:text-xl p-5 gap-4"
-                    style="max-width: 500px;">
+                    style="max-width: 650px;">
                     <div class="">Pagamento:</div>
                     <div id="pagamento"> </div>
                     <div class="">Nome:</div>
@@ -109,7 +109,8 @@
                         class="underline underline-offset-3 decoration-8 decoration-amber-800 ">rindirizzato</span><br><br>
                     per
                     effettuare il pagamento
-                <span id="clock">...5</span></h1>
+                    <span id="clock">...5</span>
+                </h1>
             </div>
         </div>
 
@@ -128,7 +129,9 @@
         document.addEventListener('DOMContentLoaded', () => {
 
             var datiPagante;
+            var lenghtPagante; //var per prendere sempre l ultimo elemento
             var metodoPagamento;
+            //Click su i pulsanti contanti o carta
             $("#contanti").click(function () {
                 metodoPagamento = "Contanti"
                 riepilogo()
@@ -144,30 +147,30 @@
                 $("#rindirizzamentoView").addClass("hidden");
                 $("#riepilogo").removeClass("hidden");
                 $("#ripilogoDati #pagamento").html(metodoPagamento);
-                $("#ripilogoDati #nome").html(datiPagante[0].nome);
-                $("#ripilogoDati #email").html(datiPagante[0].email);
-                $("#ripilogoDati #numTel").html(datiPagante[0].numTel);
-                $("#ripilogoDati #numPersone").html(datiPagante[0].numPersone);
-                $("#ripilogoDati #percorso").html(datiPagante[0].percorso);
-                $("#ripilogoDati #data").html(datiPagante[0].data);
+                $("#ripilogoDati #nome").html(datiPagante[lenghtPagante].nome);
+                $("#ripilogoDati #email").html(datiPagante[lenghtPagante].email);
+                $("#ripilogoDati #numTel").html(datiPagante[lenghtPagante].numTel);
+                $("#ripilogoDati #numPersone").html(datiPagante[lenghtPagante].numPersone);
+                $("#ripilogoDati #percorso").html(datiPagante[lenghtPagante].percorso);
+                $("#ripilogoDati #data").html(datiPagante[lenghtPagante].data);
             }
 
             /*Cambio contesto per il rindirizzamento per pagamento con carta*/
             function rindirizzamento() {
                 $("#metodoPagamento").addClass("hidden");
                 $("#rindirizzamentoView").removeClass("hidden")
-                //  setTimeout(riepilogo(), 5000);
+                //Timer
                 setTimeout(function () {
-                    $("#clock").html('...4'); 
+                    $("#clock").html('...4');
                 }, 1000);
                 setTimeout(function () {
-                    $("#clock").html('...3'); 
+                    $("#clock").html('...3');
                 }, 2000);
                 setTimeout(function () {
-                    $("#clock").html('...2'); 
+                    $("#clock").html('...2');
                 }, 3000);
                 setTimeout(function () {
-                    $("#clock").html('...1'); 
+                    $("#clock").html('...1');
                 }, 4000);
                 setTimeout(function () {
                     riepilogo()
@@ -176,8 +179,10 @@
 
             /*Recupero i dati dal file json*/
             $.getJSON("/assets/js/storeData.json", function (data) {
-                console.log(data);
+                //rendo i dati globali
                 datiPagante = data;
+                //prendo la lunghezza del array
+                lenghtPagante = (Object.keys(datiPagante).length) - 1;
 
             }).fail(function () {
                 console.log("An error has occurred.");
