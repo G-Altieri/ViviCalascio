@@ -372,7 +372,7 @@
                             </svg>
                         </div>
                         <label for="data" class="block mb-2 text-sm font-medium text-gray-900 ">Seleziona Data</label>
-                        <input datepicker datepicker-autohide type="text" id="dataPicker" required
+                        <input datepicker datepicker-autohide datepicker-format="yyyy-dd-mm" type="text" id="dataPicker" required
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  "
                             placeholder="Seleziona Data">
                     </div>
@@ -428,8 +428,6 @@
                     },
                     selected: {
                         dates: ['2023-02-02', '2023-01-27', '2023-01-23'],
-                        month: 0,
-                        year: 2023,
                     },
                 },
             });
@@ -444,9 +442,7 @@
                         day: false,
                     },
                     selected: {
-                        dates: ['2023-02-02', '2023-01-27', '2023-01-23'],
-                        month: 0,
-                        year: 2023,
+                        dates: ['2023-02-02', '2023-01-27', '2023-01-23'],  
                     },
                 },
             });
@@ -462,8 +458,6 @@
                     },
                     selected: {
                         dates: ['2023-02-02', '2023-01-27', '2023-01-23'],
-                        month: 0,
-                        year: 2023,
                     },
                 },
             });

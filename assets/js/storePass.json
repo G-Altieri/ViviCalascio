@@ -1,0 +1,14 @@
+{
+    "guide": [
+        {
+            "nomeUtente": "Guida",
+            "password": "guida"
+        }
+    ],
+    "admin": [
+        {
+            "nomeUtente": "Admin",
+            "password": "admin"
+        }
+    ]
+}

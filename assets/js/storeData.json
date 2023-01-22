@@ -3,8 +3,15 @@
         "nome": "Giammarco",
         "email": "asdasd@asddsf.com",
         "numTel": "324324534",
-        "numPersone": "2342432",
+        "numPersone": "56",
         "percorso": "percorso2",
-        "data": "01\/22\/2023"
+        "data": "2023-02-25"
+    },  {
+        "nome": "Guiovanni",
+        "email": "asdsf.com",
+        "numTel": "8788888884",
+        "numPersone": "2",
+        "percorso": "percorso1",
+        "data": "2023-04-07"
     }
 ]

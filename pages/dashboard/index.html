@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivi Calascio</title>
+
+    <!-- Icona -->
+    <link rel="icon" type="image/x-icon" href="/assets/icon/castello.ico">
+
+    <!-- Fogli Css -->
+    <link href="/assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="/assets/font/montserrat/Montserrat.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
+
+
+    <!-- Script JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+
+
+    <!-- Imagine Carta Strappata -->
+    <div class="relative sfondoCarta grid justify-items-center h-screen " id="sfondoCarta">
+
+        <!-- Scegli Metodo di pagamento -->
+        <div id="metodoPagamento">
+            <div class="relative mt-28 text-center py-4">
+                <h1
+                    class="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">
+                    Login </h1>
+
+            </div>
+
+            <!-- Form per il Login -->
+            <div class="mx-auto rounded-xl p-4 bg-slate-50  border-b shadow-md w-64 md:w-80 lg:w-96 relative grid justify-items-stretch"
+                id="formLogin" style="max-width: 500px;">
+                <div class="mb-6">
+                    <label for="nomeUtente" class="block mb-2 text-sm font-medium text-gray-900 ">Nome Utente</label>
+                    <input type="email" id="nomeUtente"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="Guida01" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
+                    <input type="password" id="password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="•••••••••" required>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="checkPass" type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                    <label for="checkPass" class="ml-2 text-sm font-medium text-gray-900">Mostra
+                        Password</label>
+                </div>
+                <div class="hidden text-xs text-red-800 my-2" id="error">Nome Utente o Password Errati</div>
+                <button type="button" id="btnInvia"
+                    class=" justify-self-end text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Accedi</button>
+            </div>
+
+
+            <div id="accesso" class="hidden">Accesso</div>
+
+            <!-- Spazio Bianco -->
+            <div class="pt-48"></div>
+
+        </div>
+
+
+        <script>
+
+
+            document.addEventListener('DOMContentLoaded', () => {
+
+
+                //Mostra Password 
+                $("#checkPass").click(function () {
+                    var x = document.getElementById("password");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                })
+
+                //Controllo Accesso
+                $("#btnInvia").click(function () {
+                    if (($("#nomeUtente").val()) == "Guida" || ($("#nomeUtente").val()) == ("guida")) {
+                        if ($("#password").val() == datiAccount.guide[0].password) {
+                            loginGuida()
+                        } else {
+                            errorLogin()
+                        }
+                    } else if ($("#nomeUtente").val() == "Admin" || $("#nomeUtente").val() == "admin") {
+                        if ($("#password").val() == datiAccount.admin[0].password) {
+                            loginAdmin()
+                        } else {
+                            errorLogin()
+                        }
+                    } else {
+                        errorLogin()
+                    }
+                })
+
+                //Se fa il login una guida
+                function loginGuida() {
+                    window.location.replace('/pages/dashboard/guida.html');
+                }
+                
+                //Se fa il login l admin
+                function loginAdmin() {
+                    window.location.replace('/pages/dashboard/admin.html');
+                }
+
+                /*Errore nel login*/
+                function errorLogin() {
+                    $("#error").removeClass("hidden")
+                }
+
+                var datiAccount;
+                /*Recupero i dati dal file json che contiene le password*/
+                $.getJSON("/assets/js/storePass.json", function (data) {
+                    //rendo i dati globali
+                    datiAccount = data;
+                }).fail(function () {
+                    console.log("An error has occurred.");
+                });
+            });
+        </script>
+</body>
+
+</html>
