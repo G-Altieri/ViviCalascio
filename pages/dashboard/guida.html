@@ -58,11 +58,11 @@
 
                 <!-- Calendario con  Prenotazioni  -->
                 <div class="mt-14 grid grid-cols-1 md:grid-cols-2 justify-items-stretch">
-                    <div id="calendarGuida" class="justify-self-center mb-8"></div>
+                    <div id="calendarGuida" class="justify-self-center  self-center mb-8"
+                        style="    max-height: 260px;"></div>
 
                     <div id="prenotazioniElenco">
                         <div class="text-center text-md font-bold mb-6">Prenotazioni</div>
-                      
                     </div>
                 </div>
             </div>
@@ -78,50 +78,49 @@
 
 
         document.addEventListener('DOMContentLoaded', () => {
-            const calendar = new VanillaCalendar('#calendarGuida', {
-                settings: {
-                    lang: 'it',
-                    visibility: {
-                        weekend: false,
-                    },
-                    selection: {
-                        day: false,
-                    },
-                    selected: {
-                        dates: ['2023-02-08', '2023-01-27', '2023-01-23'],
-                    },
-                },
-            });
-            calendar.init();
 
-            var dataX = [
-                {
-                    "nome": "Giammarco",
-                    "email": "asdasd@asddsf.com",
-                    "numTel": "324324534",
-                    "numPersone": "56",
-                    "percorso": "percorso2",
-                    "data": "2023-02-25"
-                }, {
-                    "nome": "Guiovanni",
-                    "email": "asdsf.com",
-                    "numTel": "8788888884",
-                    "numPersone": "2",
-                    "percorso": "percorso1",
-                    "data": "2023-04-07"
-                }
-            ];
+            function renderCalendario() {
+                const calendar = new VanillaCalendar('#calendarGuida', {
+                    settings: {
+                        lang: 'it',
+                        visibility: {
+                            weekend: false,
+                        },
+                        selection: {
+                            day: false,
+                        },
+                        selected: {
+                            dates: arrayDataPrenotazioni,
+                        },
+                    },
+                });
+                calendar.init();
+            }
 
-            
 
-            $.each(dataX, function (i, l) {
-                $("#prenotazioniElenco").append(
-                '<div class="grid grid-cols-2 gap-2 content-center bg-blue-50 rounded-3xl shadow-md justify-items-center mt-6 p-2" style="max-height: 100px;"><div>'+l.nome+'</div><div>'+l.numTel+'</div><div>'+l.data+'</div><div>'+l.numPersone+' Persone</div><div class="col-span-2">'+l.email+'</div></div>'
-                ); console.log("Index #" + i + ": " + l.nome);
+            var prenotazioniDaFile;
+            /*Recupero i dati dal file json che contiene le password*/
+            $.getJSON("/assets/js/storeData.json", function (data) {
+                //rendo i dati globali
+                prenotazioniDaFile = data;
+                renderPrenotazioni();
+            }).fail(function () {
+                console.log("An error has occurred.");
             });
 
 
-
+            var arrayDataPrenotazioni = [];
+            function renderPrenotazioni() {
+                $.each(prenotazioniDaFile, function (i, l) {
+                    if (l.percorso == 1) {
+                        $("#prenotazioniElenco").append(
+                            '<div class="grid grid-cols-2 gap-2 content-center bg-blue-50 rounded-3xl shadow-md justify-items-center mt-6 p-2" style="max-height: 100px;"><div>' + l.nome + '</div><div>' + l.numTel + '</div><div>' + l.data + '</div><div>' + l.numPersone + ' Persone</div><div class="col-span-2">' + l.email + '</div></div>'
+                        );
+                        arrayDataPrenotazioni.push(l.data)
+                    }
+                });
+                renderCalendario()
+            }
 
 
 

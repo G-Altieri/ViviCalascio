@@ -353,9 +353,9 @@
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                             required="required">
                             <option value="">Seleziona percorso</option>
-                            <option value="percorso1">Percorso Uno</option>
-                            <option value="percorso2">Percorso Due</option>
-                            <option value="percorso3">Percorso Tre</option>
+                            <option value="1">Percorso Uno</option>
+                            <option value="2">Percorso Due</option>
+                            <option value="3">Percorso Tre</option>
 
                         </select>
                     </div>
@@ -372,7 +372,8 @@
                             </svg>
                         </div>
                         <label for="data" class="block mb-2 text-sm font-medium text-gray-900 ">Seleziona Data</label>
-                        <input datepicker datepicker-autohide datepicker-format="yyyy-dd-mm" type="text" id="dataPicker" required
+                        <input datepicker datepicker-autohide datepicker-format="yyyy-mm-dd" type="text" id="dataPicker"
+                            required
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  "
                             placeholder="Seleziona Data">
                     </div>
@@ -412,66 +413,95 @@
         <ul class="text-center text-white text-xl grid gap-4">
             <li><a href="/">Home</a></li>
             <li><a href="/pages/infoCalascio/">Calascio Antica</a></li>
+            <li><a href="/pages/dashboard/">Login Guida</a></li>
             <!-- <li><a href="/pages/prenotazione/">Prenotazione</a></li> -->
         </ul>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const calendar = new VanillaCalendar('#calendar', {
-                settings: {
-                    lang: 'it',
-                    visibility: {
-                        weekend: false,
-                    },
-                    selection: {
-                        day: false,
-                    },
-                    selected: {
-                        dates: ['2023-02-02', '2023-01-27', '2023-01-23'],
-                    },
-                },
-            });
-            calendar.init();
-            const calendar2 = new VanillaCalendar('#calendar2', {
-                settings: {
-                    lang: 'it',
-                    visibility: {
-                        weekend: false,
-                    },
-                    selection: {
-                        day: false,
-                    },
-                    selected: {
-                        dates: ['2023-02-02', '2023-01-27', '2023-01-23'],  
-                    },
-                },
-            });
-            calendar.init();
-            const calendar3 = new VanillaCalendar('#calendar3', {
-                settings: {
-                    lang: 'it',
-                    visibility: {
-                        weekend: false,
-                    },
-                    selection: {
-                        day: false,
-                    },
-                    selected: {
-                        dates: ['2023-02-02', '2023-01-27', '2023-01-23'],
-                    },
-                },
-            });
-            calendar.init();
-            calendar2.init();
-            calendar3.init();
 
-            //Invio Form
+
+
+            //Variabili globalo
+            var datePrimoCalendario = [];
+            var dateSecondoCalendario = [];
+            var dateTerzoCalendario = [];
+
+
+            //Funzione che renderizza i calendari dopo che sono stati recuperati i dati dal file json
+            function renderCalendari() {
+                const calendar = new VanillaCalendar('#calendar', {
+                    settings: {
+                        lang: 'it',
+                        visibility: {
+                            weekend: false,
+                        },
+                        selection: {
+                            day: false,
+                        },
+                        selected: {
+                            dates: datePrimoCalendario,
+                        },
+                    },
+                });
+                const calendar2 = new VanillaCalendar('#calendar2', {
+                    settings: {
+                        lang: 'it',
+                        visibility: {
+                            weekend: false,
+                        },
+                        selection: {
+                            day: false,
+                        },
+                        selected: {
+                            dates: dateSecondoCalendario,
+                        },
+                    },
+                });
+                const calendar3 = new VanillaCalendar('#calendar3', {
+                    settings: {
+                        lang: 'it',
+                        visibility: {
+                            weekend: false,
+                        },
+                        selection: {
+                            day: false,
+                        },
+                        selected: {
+                            dates: dateTerzoCalendario,
+                        },
+                    },
+                });
+                calendar.init();
+                calendar2.init();
+                calendar3.init();
+            }
+
+
+            //Recupero dati per il render dei calendari
             $.getJSON("/assets/js/storeData.json", function (data) {
-                console.log(data);
+                //Salvo le varie date gia prenotate per il render sui vari calendari
+                $.each(data, function (i, l) {
+                    switch (l.percorso) {
+                        case '1':
+                            datePrimoCalendario.push(l.data)
+                            break;
+                        case '2':
+                            dateSecondoCalendario.push(l.data)
+                            break;
+                        case '3':
+                            dateTerzoCalendario.push(l.data)
+                            break;
+                        default:
+                            ;
+                    }
+                });
+                renderCalendari() //dati recuperati faccio il render dei calendari
             }).fail(function () {
                 console.log("An error has occurred.");
             });
 
+            //Invio Form
             $("#submitButton").click(function () {
                 if ($("#nome").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#numPersone").val() != "" && $("#percorso").val() != "" && $("#dataPicker").val() && $('#checkTerm').is(":checked")) {
 
@@ -495,11 +525,7 @@
                             console.error(xhr);
                         }
                     });
-
-
-
                 } //fine if del controllo della form
-
             });
 
         });
