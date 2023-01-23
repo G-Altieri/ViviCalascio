@@ -479,7 +479,7 @@
 
 
             //Recupero dati per il render dei calendari
-            $.getJSON("/assets/js/storeData.json", function (data) {
+            $.getJSON("/assets/js/storeData.json?versione=<?php echo time();?>", function (data) {
                 //Salvo le varie date gia prenotate per il render sui vari calendari
                 $.each(data, function (i, l) {
                     switch (l.percorso) {
@@ -519,7 +519,7 @@
                         cache: false,
                         success: function (data) {
                             console.log(data);
-                            window.location.replace('/pages/prenotazione/pagamento.html');
+                            window.location.replace('/pages/prenotazione/pagamento.php');
                         },
                         error: function (xhr, status, error) {
                             console.error(xhr);

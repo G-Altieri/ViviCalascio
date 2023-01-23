@@ -178,7 +178,7 @@
             }
 
             /*Recupero i dati dal file json*/
-            $.getJSON("/assets/js/storeData.json", function (data) {
+            $.getJSON("/assets/js/storeData.json?versione=<?php echo time();?>", function (data) {
                 //rendo i dati globali
                 datiPagante = data;
                 //prendo la lunghezza del array
