@@ -83,7 +83,6 @@
 
             document.addEventListener('DOMContentLoaded', () => {
 
-
                 //Mostra Password 
                 $("#checkPass").click(function () {
                     var x = document.getElementById("password");
@@ -115,12 +114,24 @@
 
                 //Se fa il login una guida
                 function loginGuida() {
-                    window.location.replace('/pages/dashboard/guida.html');
-                }
+                    $.ajax({
+                        type: "GET",
+                        url: "controlloAccessoLogin.php",     
+                        cache: false,
+                        success: function (data) {
+                            console.log(data);
+                            window.location.replace('/pages/dashboard/guida.php');
+                        },
+                        error: function (xhr, status, error) {
+                            console.error(xhr);
+                        }
+                    });
                 
+                }
+
                 //Se fa il login l admin
                 function loginAdmin() {
-                    window.location.replace('/pages/dashboard/admin.html');
+                    window.location.replace('/pages/dashboard/admin.php');
                 }
 
                 /*Errore nel login*/

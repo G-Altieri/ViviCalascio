@@ -1,1 +1,56 @@
-[{"nome":"Giammarco","email":"asdasd@asddsf.com","numTel":"324324534","numPersone":"56","percorso":"2","data":"2023-01-08"},{"nome":"Giammarco","email":"asdasd@asddsf.com","numTel":"324324534","numPersone":"56","percorso":"3","data":"2023-01-27"},{"nome":"Francesco","email":"asdsf.com","numTel":"8788888884","numPersone":"2","percorso":"1","data":"2023-01-07"},{"nome":"Giovanni","email":"giovanni.alt1@gmail.com","numTel":"3270619993","numPersone":"3434","percorso":"1","data":"2023-01-12"},{"nome":"Giovanniasdasdas","email":"giovanni.alt1@gmail.com","numTel":"3270619993","numPersone":"123","percorso":"2","data":"2023-01-18"},{"nome":"Giamamrco","email":"giovanni.alt1@gmail.com","numTel":"3270619993","numPersone":"34","percorso":"1","data":"2023-02-09"}]
+[
+    {
+        "nome": "Giammarco",
+        "email": "asdasd@asddsf.com",
+        "numTel": "324324534",
+        "numPersone": "56",
+        "percorso": "2",
+        "data": "2023-01-08",
+        "pagamento": "Carta"
+    },
+    {
+        "nome": "Giammarco",
+        "email": "asdasd@asddsf.com",
+        "numTel": "324324534",
+        "numPersone": "56",
+        "percorso": "3",
+        "data": "2023-01-27",
+        "pagamento": "Carta"
+    },
+    {
+        "nome": "Francesco",
+        "email": "asdsf.com",
+        "numTel": "8788888884",
+        "numPersone": "2",
+        "percorso": "1",
+        "data": "2023-01-07",
+        "pagamento": "Contanti"
+    },
+    {
+        "nome": "Giovanni",
+        "email": "giovanni.alt1@gmail.com",
+        "numTel": "3270619993",
+        "numPersone": "3434",
+        "percorso": "1",
+        "data": "2023-01-12",
+        "pagamento": "Carta"
+    },
+    {
+        "nome": "Giovanniasdasdas",
+        "email": "giovanni.alt1@gmail.com",
+        "numTel": "3270619993",
+        "numPersone": "123",
+        "percorso": "2",
+        "data": "2023-01-18",
+        "pagamento": "Carta"
+    },
+    {
+        "nome": "Giamamrco",
+        "email": "giovanni.alt1@gmail.com",
+        "numTel": "3270619993",
+        "numPersone": "34",
+        "percorso": "1",
+        "data": "2023-02-09",
+        "pagamento": "Carta"
+    }
+]

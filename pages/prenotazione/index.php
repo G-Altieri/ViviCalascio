@@ -420,8 +420,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-
-
             //Variabili globalo
             var datePrimoCalendario = [];
             var dateSecondoCalendario = [];
@@ -500,11 +498,10 @@
             }).fail(function () {
                 console.log("An error has occurred.");
             });
-
+           
             //Invio Form
             $("#submitButton").click(function () {
                 if ($("#nome").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#numPersone").val() != "" && $("#percorso").val() != "" && $("#dataPicker").val() && $('#checkTerm').is(":checked")) {
-
                     $.ajax({
                         type: "POST",
                         url: "salvaDatiForm.php",
