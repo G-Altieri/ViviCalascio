@@ -19,9 +19,7 @@
     <!-- Script JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/assets/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/datepicker.min.js"></script>
@@ -44,21 +42,17 @@
         </a>
         <!-- hamburgher Menu -->
         <svg class="ham hamRotate ham8 flex-none right-0 scale-75" viewBox="0 0 100 100" width="80" id="hamMenu">
-            <path class="line top"
-                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
             <path class="line middle" d="m 30,50 h 40" />
-            <path class="line bottom"
-                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
         </svg>
     </div>
 
 
     <!-- Imagine Top Castello -->
     <div class="relative">
-        <img src="/assets/img/calascioAntica/calascioAnticaSfondoTop.jpg" class="relative w-full"
-            alt="Castello Calascio Antica">
-        <div
-            class="text-5xl md:text-6xl lg:text-8xl w-full font-extrabold  text-black text-center left-1/2 -translate-x-1/2 absolute z-10 -bottom-20 md:bottom-0">
+        <img src="/assets/img/calascioAntica/calascioAnticaSfondoTop.jpg" class="relative w-full" alt="Castello Calascio Antica">
+        <div class="text-5xl md:text-6xl lg:text-8xl w-full font-extrabold  text-black text-center left-1/2 -translate-x-1/2 absolute z-10 -bottom-20 md:bottom-0">
             Le nostre <span class="text-red-800">Guide</span></div>
     </div>
 
@@ -73,24 +67,21 @@
 
             <div class="w-full max-w-sm bg-purple-100 border border-gray-200 rounded-lg shadow-md ">
                 <div class="flex flex-col items-center pb-10 ">
-                    <img class="mt-6 w-24 h-24 mb-3 rounded-full shadow-lg" src="/assets/img/prenotazione/guida1.png"
-                        alt="Guida 1" />
+                    <img class="mt-6 w-24 h-24 mb-3 rounded-full shadow-lg" src="/assets/img/prenotazione/guida1.png" alt="Guida 1" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">Sara Rossi</h5>
                     <span class="text-sm text-gray-500 ">Guida Esperta</span>
                 </div>
             </div>
             <div class="w-full max-w-sm bg-red-100 border border-gray-200 rounded-lg shadow-md ">
                 <div class="flex flex-col items-center pb-10 ">
-                    <img class="mt-6 w-24 h-24 mb-3 rounded-full shadow-lg" src="/assets/img/prenotazione/guida2.png"
-                        alt="Guida 2" />
+                    <img class="mt-6 w-24 h-24 mb-3 rounded-full shadow-lg" src="/assets/img/prenotazione/guida2.png" alt="Guida 2" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">Francesca Bianchi</h5>
                     <span class="text-sm text-gray-500 ">Guida Esperta</span>
                 </div>
             </div>
             <div class="w-full max-w-sm bg-yellow-100 border border-gray-200 rounded-lg shadow-md ">
                 <div class="flex flex-col items-center pb-10 ">
-                    <img class="mt-6 w-24 h-24 mb-3 rounded-full shadow-lg" src="/assets/img/prenotazione/guida3.png"
-                        alt="Guida 3" />
+                    <img class="mt-6 w-24 h-24 mb-3 rounded-full shadow-lg" src="/assets/img/prenotazione/guida3.png" alt="Guida 3" />
                     <h5 class="mb-1 text-xl font-medium text-gray-900 ">Roberta Di Paolo</h5>
                     <span class="text-sm text-gray-500 ">Guida Esperta</span>
                 </div>
@@ -101,8 +92,7 @@
         <!-- Scegli il tuo Percorso -->
         <div class="relative mt-28 text-center">
             <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">
-                Scegli il tuo <span
-                    class="underline underline-offset-3 decoration-8 decoration-amber-800 ">Percorso</span></h1>
+                Scegli il tuo <span class="underline underline-offset-3 decoration-8 decoration-amber-800 ">Percorso</span></h1>
         </div>
 
 
@@ -126,8 +116,7 @@
 
 
                     <div class="flex items-center mb-5">
-                        <p
-                            class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-1.5 rounded ">
+                        <p class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-1.5 rounded ">
                             8.7</p>
                         <p class="pl-3 text-sm font-medium text-gray-500 ">Punteggio</p>
 
@@ -190,8 +179,7 @@
 
 
                     <div class="flex items-center mb-5">
-                        <p
-                            class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-1.5 rounded ">
+                        <p class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-1.5 rounded ">
                             5.7</p>
                         <p class="pl-3 text-sm font-medium text-gray-500 ">Punteggio</p>
 
@@ -251,8 +239,7 @@
 
 
                     <div class="flex items-center mb-5">
-                        <p
-                            class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-1.5 rounded ">
+                        <p class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-1.5 rounded ">
                             4.0</p>
                         <p class="pl-3 text-sm font-medium text-gray-500 ">Punteggio</p>
 
@@ -306,8 +293,7 @@
 
         <!-- Title Prenota la Guida -->
         <div class="relative mt-28 text-center px-2">
-            <h1
-                class="mb-4 text-4xl w-80 md:w-full font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">
+            <h1 class="mb-4 text-4xl w-80 md:w-full font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">
                 Prenota <mark class="px-2 text-white bg-blue-600 rounded">Subito</mark> la tua guida</h1>
         </div>
 
@@ -320,38 +306,28 @@
                     <div>
                         <label for="nome" class="block mb-2 text-sm font-medium text-gray-900 ">Nome e
                             Cognome</label>
-                        <input type="text" id="nome"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="Mario Rossi" required>
+                        <input type="text" id="nome" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Mario Rossi" required>
                     </div>
                     <!-- Email -->
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
-                        <input type="text" id="email"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="asd@email.com" required>
+                        <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="asd@email.com" required>
                     </div>
                     <!-- Numero di Telefono -->
                     <div>
                         <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Phone number</label>
-                        <input type="tel" id="phone"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="3479867773" required>
+                        <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="3479867773" required>
                     </div>
                     <!-- Numero di persone -->
                     <div>
                         <label for="numPersone" class="block mb-2 text-sm font-medium text-gray-900 ">Numero di
                             Persone</label>
-                        <input type="number" id="numPersone"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="1" required>
+                        <input type="number" id="numPersone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="1" required>
                     </div>
                     <!-- Selezione Percorso -->
                     <div>
                         <label for="percorso" class="block mb-2 text-sm font-medium text-gray-900 ">Percorso</label>
-                        <select id="percorso"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            required="required">
+                        <select id="percorso" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required="required">
                             <option value="">Seleziona percorso</option>
                             <option value="1">Percorso Uno</option>
                             <option value="2">Percorso Due</option>
@@ -362,34 +338,26 @@
 
                     <!-- Seleziona Data -->
                     <div class="relative">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-                            style="    padding-top: 24px;">
-                            <svg aria-hidden="true" class="w-5  text-gray-500 " fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                                    clip-rule="evenodd"></path>
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none" style="    padding-top: 24px;">
+                            <svg aria-hidden="true" class="w-5  text-gray-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                             </svg>
                         </div>
                         <label for="data" class="block mb-2 text-sm font-medium text-gray-900 ">Seleziona Data</label>
-                        <input datepicker datepicker-autohide datepicker-format="yyyy-mm-dd" type="text" id="dataPicker"
-                            required
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  "
-                            placeholder="Seleziona Data">
+                        <input datepicker datepicker-autohide datepicker-format="yyyy-mm-dd" type="text" id="dataPicker" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  " placeholder="Seleziona Data">
                     </div>
                 </div>
                 <div class="flex items-start mb-6">
                     <div class="flex items-center h-5">
 
-                        <input type="checkbox" value="" id="checkTerm"
-                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300  "
-                            required>
+                        <input type="checkbox" value="" id="checkTerm" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300  " required>
                     </div>
-                    <label for="checkTerm" class="ml-2 text-sm font-medium text-gray-900 ">I agree with the <a href="#"
-                            class="text-blue-600 hover:underline ">terms and conditions</a>.</label>
+                    <label for="checkTerm" class="ml-2 text-sm font-medium text-gray-900 ">I agree with the <a href="#" class="text-blue-600 hover:underline ">terms and conditions</a>.</label>
                 </div>
-                <button type="button" id="submitButton"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center   ">Invia</button>
+                <div class="p-4 mb-4 text-sm text-red-800 rounded-xl shadow-sm border-2 border-red-500 bg-red-50 hidden" role="alert" id="errorForm">
+                    <span class="font-medium">Errore!!!</span> Dati mancanti o campi compilati male...
+                </div>
+                <button type="button" id="submitButton" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center   ">Invia</button>
             </form>
 
         </div>
@@ -401,15 +369,12 @@
 
         <!-- Footer -->
         <div class="bottom-0 w-full">
-            <img src="/assets/img/calascioAntica/footerCastello.png" alt="footer con imagine del castello"
-                class="w-full">
+            <img src="/assets/img/calascioAntica/footerCastello.png" alt="footer con imagine del castello" class="w-full">
         </div>
     </div>
 
     <!-- Menu Dopo L apertura -->
-    <div id="menuOpen"
-        class="hidden fixed bg-black z-50 bg-opacity-10 backdrop-blur-xl w-screen grid grid-cols-1 content-center"
-        style="top:80px; height: 300px;">
+    <div id="menuOpen" class="hidden fixed bg-black z-50 bg-opacity-10 backdrop-blur-xl w-screen grid grid-cols-1 content-center" style="top:80px; height: 300px;">
         <ul class="text-center text-white text-xl grid gap-4">
             <li><a href="/">Home</a></li>
             <li><a href="/pages/infoCalascio/">Calascio Antica</a></li>
@@ -477,9 +442,9 @@
 
 
             //Recupero dati per il render dei calendari
-            $.getJSON("/assets/js/storeData.json?versione=<?php echo time();?>", function (data) {
+            $.getJSON("/assets/js/storeData.json?versione=<?php echo time(); ?>", function(data) {
                 //Salvo le varie date gia prenotate per il render sui vari calendari
-                $.each(data, function (i, l) {
+                $.each(data, function(i, l) {
                     switch (l.percorso) {
                         case '1':
                             datePrimoCalendario.push(l.data)
@@ -495,12 +460,12 @@
                     }
                 });
                 renderCalendari() //dati recuperati faccio il render dei calendari
-            }).fail(function () {
+            }).fail(function() {
                 console.log("An error has occurred.");
             });
-           
+
             //Invio Form
-            $("#submitButton").click(function () {
+            $("#submitButton").click(function() {
                 if ($("#nome").val() != "" && $("#email").val() != "" && $("#phone").val() != "" && $("#numPersone").val() != "" && $("#percorso").val() != "" && $("#dataPicker").val() && $('#checkTerm').is(":checked")) {
                     $.ajax({
                         type: "POST",
@@ -514,15 +479,18 @@
                             data: $("#dataPicker").val()
                         },
                         cache: false,
-                        success: function (data) {
+                        success: function(data) {
                             console.log(data);
                             window.location.replace('/pages/prenotazione/pagamento.php');
                         },
-                        error: function (xhr, status, error) {
+                        error: function(xhr, status, error) {
                             console.error(xhr);
                         }
                     });
                 } //fine if del controllo della form
+                else {
+                    $('#errorForm').removeClass('hidden')
+                }
             });
 
         });
