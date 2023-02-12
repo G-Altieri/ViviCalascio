@@ -5,7 +5,7 @@
         "numTel": "324324534",
         "numPersone": "56",
         "percorso": "2",
-        "data": "2023-01-08",
+        "data": "2023-02-24",
         "pagamento": "Carta"
     },
     {
@@ -14,7 +14,7 @@
         "numTel": "324324534",
         "numPersone": "56",
         "percorso": "3",
-        "data": "2023-01-27",
+        "data": "2023-02-27",
         "pagamento": "Carta"
     },
     {
@@ -23,34 +23,16 @@
         "numTel": "8788888884",
         "numPersone": "2",
         "percorso": "1",
-        "data": "2023-01-07",
+        "data": "2023-02-07",
         "pagamento": "Contanti"
     },
     {
         "nome": "Giovanni",
-        "email": "giovanni.alt1@gmail.com",
-        "numTel": "3270619993",
+        "email": "giovanni@gmail.com",
+        "numTel": "3270318693",
         "numPersone": "3434",
         "percorso": "1",
-        "data": "2023-01-12",
-        "pagamento": "Carta"
-    },
-    {
-        "nome": "Giovanniasdasdas",
-        "email": "giovanni.alt1@gmail.com",
-        "numTel": "3270619993",
-        "numPersone": "123",
-        "percorso": "2",
-        "data": "2023-01-18",
-        "pagamento": "Carta"
-    },
-    {
-        "nome": "Giamamrco",
-        "email": "giovanni.alt1@gmail.com",
-        "numTel": "3270619993",
-        "numPersone": "34",
-        "percorso": "1",
-        "data": "2023-02-09",
+        "data": "2023-02-14",
         "pagamento": "Carta"
     }
 ]

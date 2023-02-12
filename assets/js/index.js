@@ -55,4 +55,25 @@ $(document).ready(function () {
 
     });
 
+
+
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+console.log("Welcome to Programiz!");
+
+function f(x){
+    if(x == 0){
+        return 1
+    }
+    if(x == 1){
+        return 1
+    }
+    return 4*f(x-1)-8*f(x-2)
+}
+
+console.log(f(8));
+
+
 }); 

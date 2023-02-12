@@ -56,7 +56,7 @@
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
                     <input type="password" id="password"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        placeholder="•••••••••" required>
+                        placeholder="guida" required>
                 </div>
                 <div class="flex items-center mb-4">
                     <input id="checkPass" type="checkbox" value=""
@@ -95,7 +95,7 @@
 
                 //Controllo Accesso
                 $("#btnInvia").click(function () {
-                    if (($("#nomeUtente").val()) == "Guida1" || ($("#nomeUtente").val()) == ("guida1")) {
+                    if (($("#nomeUtente").val()) == "Guida01" || ($("#nomeUtente").val()) == ("guida01")) {
                         if ($("#password").val() == datiAccount.guide[0].password) {
                             loginGuida()
                         } else {
@@ -116,7 +116,7 @@
                 function loginGuida() {
                     $.ajax({
                         type: "GET",
-                        url: "controlloAccessoLogin.php",     
+                        url: "controlloAccessoLogin.php",
                         cache: false,
                         success: function (data) {
                             console.log(data);
@@ -126,12 +126,23 @@
                             console.error(xhr);
                         }
                     });
-                
+
                 }
 
                 //Se fa il login l admin
                 function loginAdmin() {
-                    window.location.replace('/pages/dashboard/admin.php');
+                    $.ajax({
+                        type: "GET",
+                        url: "controlloAccessoLogin.php",
+                        cache: false,
+                        success: function (data) {
+                            console.log(data);
+                            window.location.replace('/pages/dashboard/admin.php');
+                        },
+                        error: function (xhr, status, error) {
+                            console.error(xhr);
+                        }
+                    });
                 }
 
                 /*Errore nel login*/
