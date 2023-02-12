@@ -107,11 +107,11 @@
                 </a>
                 <div class="p-5">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso Uno</h5>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso 1</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore repellat omnis eveniet nihil unde! Blanditiis, eveniet necessitatibus quod vitae
-                        molestiae ad et accusantium! Tempora nemo voluptate vitae non rem tenetur?</p>
+                    <p class="mb-3 font-normal text-gray-700 ">Ti porteremo alla scoperta della parte avventurosa di Rocca Calascio, attraverseremo il borgo diretti verso l’antica rocca passando per il borgo antico e per i suoi ruderi
+                        -palazzo Frasca -> casa Torre la Palmara -> borgo antico -> ponte levatoio -> castello -> chiesa di Santa Maria della pietà
+                    </p>
 
 
 
@@ -170,11 +170,11 @@
                 </a>
                 <div class="p-5">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso Due</h5>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso 2</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore repellat omnis eveniet nihil unde! Blanditiis, eveniet necessitatibus quod vitae
-                        molestiae ad et accusantium! Tempora nemo voluptate vitae non rem tenetur?</p>
+                    <p class="mb-3 font-normal text-gray-700 ">Ti porteremo alla scoperta della parte culturale di Rocca Calascio, attraverseremo il borgo tra i palazzi e chiese storiche verso il castello di rocca calascio
+                        -palazzo Frasca -> casa Torre la Palmara -> palazzo Taranta -> chiesa San Nicola -> chiesa Sant'antonio abate -> castello
+                    </p>
 
 
 
@@ -230,11 +230,11 @@
                 </a>
                 <div class="p-5">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso Terzo</h5>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso 3</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore repellat omnis eveniet nihil unde! Blanditiis, eveniet necessitatibus quod vitae
-                        molestiae ad et accusantium! Tempora nemo voluptate vitae non rem tenetur?</p>
+                    <p class="mb-3 font-normal text-gray-700 ">Ti porteremo alla scoperta della parte culturale di Rocca Calascio, un percorso per bambini, di breve durata tra palazzi storici fino al castello
+                        -palazzo Frasca -> casa Torre la Palmara -> palazzo Taranta -> chiesa Santa Maria della pietà -> castello
+                    </p>
 
 
 

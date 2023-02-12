@@ -106,11 +106,10 @@
                         </a>
                         <div class="p-5">
                             <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso Uno</h5>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso 1</h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Dolore repellat omnis eveniet nihil unde! Blanditiis, eveniet necessitatibus quod vitae
-                                molestiae ad et accusantium! Tempora nemo voluptate vitae non rem tenetur?</p>
+                            <p class="mb-3 font-normal text-gray-700 ">Ti porteremo alla scoperta della parte avventurosa di Rocca Calascio, attraverseremo il borgo diretti verso l’antica rocca passando per il borgo antico e per i suoi ruderi
+                                -palazzo Frasca -> casa Torre la Palmara -> borgo antico -> ponte levatoio -> castello -> chiesa di Santa Maria della pietà</p>
 
 
 
@@ -166,11 +165,10 @@
                         </a>
                         <div class="p-5">
                             <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso Due</h5>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso 2</h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Dolore repellat omnis eveniet nihil unde! Blanditiis, eveniet necessitatibus quod vitae
-                                molestiae ad et accusantium! Tempora nemo voluptate vitae non rem tenetur?</p>
+                            <p class="mb-3 font-normal text-gray-700 ">Ti porteremo alla scoperta della parte culturale di Rocca Calascio, attraverseremo il borgo tra i palazzi e chiese storiche verso il castello di rocca calascio
+                                -palazzo Frasca -> casa Torre la Palmara -> palazzo Taranta -> chiesa San Nicola -> chiesa Sant'antonio abate -> castello</p>
 
                             <div class="flex items-center mb-5">
                                 <p class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-1.5 rounded ">
@@ -222,11 +220,10 @@
                         </a>
                         <div class="p-5">
                             <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso Terzo</h5>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Percorso 3</h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Dolore repellat omnis eveniet nihil unde! Blanditiis, eveniet necessitatibus quod vitae
-                                molestiae ad et accusantium! Tempora nemo voluptate vitae non rem tenetur?</p>
+                            <p class="mb-3 font-normal text-gray-700 ">Ti porteremo alla scoperta della parte culturale di Rocca Calascio, un percorso per bambini, di breve durata tra palazzi storici fino al castello
+                                -palazzo Frasca -> casa Torre la Palmara -> palazzo Taranta -> chiesa Santa Maria della pietà -> castello</p>
 
 
 
@@ -281,68 +278,81 @@
                 <div class="grid justify-items-center">
 
                     <!-- Lista dei Luoghi -->
-                    <div class="w-4/5 md:w-2/4  mt-24">
-                        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">
-                            Luoghi <span class="text-violet-600 ">Unici</span> ti aspettano</h1>
+                    <div class="w-4/5 md:w-4/5 mt-24">
+                        <div class="w-2/4">
+                            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">
+                                Luoghi <span class="text-violet-600 ">Unici</span> ti aspettano</h1>
+                        </div>
 
                         <!-- Primo Luogo -->
-                        <div class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
+                        <div class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-full hover:bg-gray-100 ">
                             <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/assets/img/calascioAntica/box1.jpg" alt="">
                             <div class="flex flex-col justify-between p-4 leading-normal">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Luogo Uno</h5>
-                                <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quos est voluptas adipisci nisi voluptates aliquid consequatur earum quae, nam fuga iste
-                                    corrupti, magnam ratione asperiores reiciendis, deleniti tempore similique pariatur?</p>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Borgo Antico</h5>
+                                <p class="mb-3 font-normal text-gray-700 ">
+                                    è la parte originaria del borgo medievale di cui rimangono solo alcuni ruderi, quella più vicina
+                                    al castello. Con la dominazione Aragonese una dogana importante per la pastorizia, che diede
+                                    nuova linfa all'economia della zona. La pastorizia e le attività a essa legate diventarono
+                                    quindi la principale fonte di reddito del borgo, del castello e dell'area circostante. Proprio
+                                    per questo motivo si sviluppò ancora di più il piccolo borgo sottostante, anch'esso fortificato.
+                                    Nel 1703 il paese venne danneggiato dal terremoto del 1703, in seguito al quale il borgo di
+                                    Rocca Calascio, fortemente provato, venne quasi completamente abbandonato.</p>
                             </div>
+
+
                             <div class="w-full flex justify-center mt-4">
                                 <button type="button" id="modifiche" class="text-white bg-red-500 border border-red-300 focus:outline-none hover:bg-red-100 focus:ring-4 focus:ring-red-200 hover:text-black font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2  justify-center">Modifica</button>
                             </div>
                         </div>
+
+
                         <!-- Secondo Luogo -->
-                        <div class=" mt-8 flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
-                            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/assets/img/calascioAntica/box2.webp" alt="">
+                        <div class=" mt-8 flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-full hover:bg-gray-100 ">
+                            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/assets/img/calascioAntica/box2.jpg" alt="">
                             <div class="flex flex-col justify-between p-4 leading-normal">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Luogo Due</h5>
-                                <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quos est voluptas adipisci nisi voluptates aliquid consequatur earum quae, nam fuga iste
-                                    corrupti, magnam ratione asperiores reiciendis, deleniti tempore similique pariatur?</p>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Chiesa Santa Maria della Pietà
+                                </h5>
+                                <p class="mb-3 font-normal text-gray-700 ">La chiesa di Santa Maria della Pietà, è una piccola
+                                    chiesa situata nei pressi del castello di Rocca Calascio. La chiesa risale al XV secolo e
+                                    presenta una semplice architettura in pietra con una facciata a capanna e una piccola cupola.
+                                    All'interno, la chiesa ospita alcune pregevoli opere d'arte, tra cui affreschi e un altare in
+                                    marmo. La Chiesa di Santa Maria della Pietà è un esempio di architettura religiosa della regione
+                                    dell'Abruzzo ed è un importante luogo di culto per la comunità locale.</p>
                             </div>
+
+
                             <div class="w-full flex justify-center mt-4">
                                 <button type="button" id="modifiche" class="text-white bg-red-500 border border-red-300 focus:outline-none hover:bg-red-100 focus:ring-4 focus:ring-red-200 hover:text-black font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2  justify-center">Modifica</button>
                             </div>
                         </div>
+
+
                         <!-- Terzo Luogo -->
-                        <div class=" mt-8 flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
+                        <div class=" mt-8 flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-full hover:bg-gray-100 ">
                             <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/assets/img/calascioAntica/box3.jpg" alt="">
                             <div class="flex flex-col justify-between p-4 leading-normal">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Luogo Tre</h5>
-                                <p class="mb-3 font-normal text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quos est voluptas adipisci nisi voluptates aliquid consequatur earum quae, nam fuga iste
-                                    corrupti, magnam ratione asperiores reiciendis, deleniti tempore similique pariatur?</p>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 "> Le vecchie Mura
+                                </h5>
+                                <p class="mb-3 font-normal text-gray-700 ">Dal 1480 con Antonio Piccolomini iniziò la ricostruzione
+                                    con la nuova cinta muraria estesa fino all'attuale parcheggio, la Cinta Muraria assunse un forte
+                                    interesse strategico e militare, facendo infatti parte di un imponente sistema difensivo di
+                                    avvistamento, che si estendeva dagli Appennini al Mare Adriatico e che serviva a monitorare il
+                                    territorio, da sempre vittima di invasioni.</p>
                             </div>
+
+
                             <div class="w-full flex justify-center mt-4">
                                 <button type="button" id="modifiche" class="text-white bg-red-500 border border-red-300 focus:outline-none hover:bg-red-100 focus:ring-4 focus:ring-red-200 hover:text-black font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2  justify-center">Modifica</button>
                             </div>
                         </div>
-
-
-                        <!-- Spazio Bianco -->
-                        <div class="pt-48"></div>
-
-
                     </div>
                 </div>
-
-
-
-
             </div>
-
-        </div>
+   
         <!-- Spazio Bianco -->
         <div class="pt-48"></div>
-
     </div>
+
 
 
     <script>
